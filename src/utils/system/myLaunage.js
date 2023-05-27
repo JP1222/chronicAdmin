@@ -42,10 +42,14 @@ const message = {
   electricity: '安静心电图',
   rate: '安静心率',
   SaO2: '血氧饱和度',
-  EF: '射血指数',
+  EF: '左心房射血指数',
+  ER: '右心房射血指数',
   muscleBone: '肌骨健康',
-  pressure: '血压',
-  sweet: '自测糖'
+  diastolicPressure: '舒张压',
+  systolicPressure: '收缩压',
+  sweet: '自测糖',
+  BMI:'MBI',
+  pid:'腰臀比' 
   // id: 'id'
 }
 
