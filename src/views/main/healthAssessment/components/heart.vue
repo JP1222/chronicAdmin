@@ -33,7 +33,7 @@
     </el-row>
     <el-row>
       <el-col :span="11" class="grid-cell">
-        <el-form-item label="射血指数" prop="EF">
+        <el-form-item label="左心房射血指数" prop="EF">
           <el-input
             v-model="formData.EF"
             type="number"
@@ -60,7 +60,18 @@
         </el-form-item>
       </el-col>
     </el-row>
-
+    <el-row>
+		<el-col :span="11" class="grid-cell">
+		  <el-form-item label="右心房射血指数" prop="EF">
+		    <el-input
+		      v-model="formData.EF"
+		      type="number"
+		      :min="0"
+		      clearable
+		    ></el-input>
+		  </el-form-item>
+		</el-col>
+	</el-row>
     <el-button size="large" type="primary" @click="submitForm">提交</el-button>
   </el-form>
 </template>
@@ -108,7 +119,13 @@ const rules = ref({
   EF: [
     {
       required: true,
-      message: '请输入射血指数'
+      message: '请输入左心房射血指数'
+    }
+  ]
+  ER: [
+    {
+      required: true,
+      message: '请输入右心房射血指数'
     }
   ]
 })
