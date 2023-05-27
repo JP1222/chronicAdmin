@@ -62,7 +62,7 @@
     </el-row>
     <el-row>
 		<el-col :span="11" class="grid-cell">
-		  <el-form-item label="右心房射血指数" prop="EF">
+		  <el-form-item label="右心房射血指数" prop="ER">
 		    <el-input
 		      v-model="formData.EF"
 		      type="number"
@@ -121,7 +121,7 @@ const rules = ref({
       required: true,
       message: '请输入左心房射血指数'
     }
-  ]
+  ],
   ER: [
     {
       required: true,
