@@ -44,7 +44,9 @@ const message = {
   SaO2: '血氧饱和度',
   EF: '射血指数',
   muscleBone: '肌骨健康',
-  pressure: '血压',
+//   pressure: '血压',
+  systolicPressure: '收缩压 (mm Hg)',
+  diastolicPressure: '舒张压 (mm Hg)',
   sweet: '自测糖'
   // id: 'id'
 }
