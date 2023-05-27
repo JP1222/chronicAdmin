@@ -62,12 +62,6 @@ const rules = {
       {
         type: 'input',
         title: '个人病史',
-        field: 'personal',
-        validate: [{ required: true, message: '请输入', trigger: 'blur' }]
-      },
-      {
-        type: 'input',
-        title: '个人病史',
         field: '锻炼参与',
         validate: [{ required: true, message: '请输入', trigger: 'blur' }]
       }
@@ -166,7 +160,7 @@ const rules = {
       {
         type: 'number',
         field: 'max',
-        title: '最大释氧量',
+        title: '最大摄氧量',
         validate: [{ type: 'number', required: true, message: '请输入数字' }]
       }
     ]
@@ -461,14 +455,21 @@ const rules = {
     rule: [
       {
         type: 'number',
-        field: 'pressure',
-        title: '血压（mm Hg）',
+        field: 'systolic pressure',
+        title: '收缩压 (mm Hg)',
         validate: [{ type: 'number', required: true, message: '请输入数字' }],
         props: {
           min: 0,
         }
-      },
-      
+      },{
+	    type: 'number',
+	    field: 'diastolic pressure',
+	    title: '舒张压 (mm Hg)',
+	    validate: [{ type: 'number', required: true, message: '请输入数字' }],
+	    props: {
+	      min: 0,
+	    }
+	  }
     ]
   }
 }
