@@ -455,7 +455,7 @@ const rules = {
     rule: [
       {
         type: 'number',
-        field: 'systolic pressure',
+        field: 'systolicPressure',
         title: '收缩压 (mm Hg)',
         validate: [{ type: 'number', required: true, message: '请输入数字' }],
         props: {
@@ -463,7 +463,7 @@ const rules = {
         }
       },{
 	    type: 'number',
-	    field: 'diastolic pressure',
+	    field: 'diastolicPressure',
 	    title: '舒张压 (mm Hg)',
 	    validate: [{ type: 'number', required: true, message: '请输入数字' }],
 	    props: {
