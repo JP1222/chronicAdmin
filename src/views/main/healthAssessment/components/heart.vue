@@ -11,23 +11,23 @@
     <el-row>
       <el-col :span="11" class="grid-cell">
         <el-form-item label="安静心率" prop="rate">
-          <el-input
+          <el-input>
             :controls="false"
             v-model="formData.rate"
             :min="0"
             type="number"
             clearable
-          ></el-input>
+          </el-input>
         </el-form-item>
       </el-col>
       <el-col :span="11" :push="1" class="grid-cell">
         <el-form-item label="血氧饱和度" prop="SaO2">
-          <el-input
+          <el-input>
             v-model="formData.SaO2"
             :min="0"
             type="number"
             clearable
-          ></el-input>
+          </el-input>
         </el-form-item>
       </el-col>
     </el-row>
