@@ -60,7 +60,7 @@
         </el-form-item>
       </el-col>
     </el-row>
-    <el-row>
+	<el-row>
 		<el-col :span="11" class="grid-cell">
 		  <el-form-item label="右心房射血指数" prop="ER">
 		    <el-input
@@ -72,6 +72,7 @@
 		  </el-form-item>
 		</el-col>
 	</el-row>
+
     <el-button size="large" type="primary" @click="submitForm">提交</el-button>
   </el-form>
 </template>
@@ -124,10 +125,10 @@ const rules = ref({
     }
   ],
   ER: [
-    {
-      required: true,
-      message: '请输入右心房射血指数'
-    }
+	  {
+	    required: true,
+	    message: '请输入右心房射血指数'
+	}
   ]
 })
 const state = reactive({
