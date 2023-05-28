@@ -45,8 +45,8 @@ const message = {
   EF: '左心房射血指数',
   ER: '右心房射血指数',
   muscleBone: '肌骨健康',
-  diastolicPressure: '舒张压',
-  systolicPressure: '收缩压',
+  diastolicPressure: '舒张压 (mm Hg)',
+  systolicPressure: '收缩压 (mm Hg)',
   sweet: '自测糖',
   BMI:'MBI',
   pid:'腰臀比' 
