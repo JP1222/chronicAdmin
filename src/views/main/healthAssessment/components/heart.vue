@@ -100,7 +100,8 @@ const uploadUrl = computed(() => {
 const formData = reactive({
   rate: '',
   SaO2: '',
-  EF: ''
+  EF: '',
+  ER: ''
 })
 
 const rules = ref({
