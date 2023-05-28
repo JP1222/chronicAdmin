@@ -64,7 +64,7 @@
 		<el-col :span="11" class="grid-cell">
 		  <el-form-item label="右心房射血指数" prop="ER">
 		    <el-input
-		      v-model="formData.EF"
+		      v-model="formData.ER"
 		      type="number"
 		      :min="0"
 		      clearable
