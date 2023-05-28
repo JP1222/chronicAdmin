@@ -15,7 +15,7 @@ const message = {
   fat: '脂肪量',
   lbw: '瘦体重',
   fatRate: '脂肪比（%）',
-  max: '最大释氧量',
+  max: '最大摄氧量',
   left: '握力（左）',
   right: '握力（右）',
   sitStand: '30s坐站（中老年）',
